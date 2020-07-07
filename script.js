@@ -8,8 +8,8 @@ inputs.forEach(input => {
 function updatecolor(e)
 {
     let value = e.target.value
-    var inputid =e.target.parentNode.id
-    var inputbg = `--bg- ${inputid}`
+    var inputid =e.target.id
+    var inputbg = `--bg-${inputid}`
     root.style.setProperty(inputbg, value)
 }
 
